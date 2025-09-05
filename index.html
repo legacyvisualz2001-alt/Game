@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Empire - Build Your Book of Business</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>🏢 Insurance Empire</h1>
+            <p>Build your book of business, one policy at a time!</p>
+        </div>
+        
+        <div class="main-game">
+            <div class="stats-panel">
+                <div class="stat">
+                    <span class="stat-label">Policies Issued:</span>
+                    <span id="policies-count">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Money Earned:</span>
+                    <span id="money-count">$0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Policies/Second:</span>
+                    <span id="policies-per-second">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Prestige Level:</span>
+                    <span id="prestige-level">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Prestige Points:</span>
+                    <span id="prestige-points">0</span>
+                </div>
+                <button id="prestige-btn" class="prestige-button" disabled>Prestige (Requires 1M policies)</button>
+            </div>
+            
+            <div class="clicker-area">
+                <canvas id="gameCanvas" width="400" height="300"></canvas>
+                <div class="click-instructions">
+                    <p>Click the desk to issue policies!</p>
+                </div>
+            </div>
+            
+            <div class="upgrades-panel">
+                <h3>Upgrades</h3>
+                <div id="upgrades-container">
+                    <!-- Upgrades will be dynamically generated -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="achievements-panel">
+            <h3>Achievements</h3>
+            <div id="achievements-container">
+                <!-- Achievements will be dynamically generated -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
